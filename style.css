@@ -1,0 +1,176 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box; /* Makes width & height include padding + border */
+
+  font-family: Arial, sans-serif;
+
+}
+
+/* ====== BASIC STYLES ====== */
+
+body {
+
+  background-color: #f4f4f4;
+
+  padding: 20px;
+
+}
+
+header {
+
+  text-align: center;
+
+  margin-bottom: 20px;
+
+}
+
+.title {
+
+  color: darkblue;
+
+  font-size: 2rem;
+
+  text-transform: uppercase;
+
+}
+
+#subtitle {
+
+  color: gray;
+
+  font-style: italic;
+
+}
+
+/* ====== BOX MODEL ====== */
+
+.box-model .box {
+
+  background-color: lightblue;
+
+  margin: 20px; /* Space outside */
+
+  padding: 20px; /* Space inside */
+
+  border: 5px solid navy; /* Border around */
+
+  width: 200px;
+
+  height: 100px;
+
+}
+
+/* ====== FLEXBOX ====== */
+
+.flex-container {
+
+  display: flex;
+
+  justify-content: space-around; /* Space evenly */
+
+  align-items: center; /* Align vertically */
+
+  background-color: lightgray;
+
+  padding: 10px;
+
+}
+
+.flex-item {
+
+  background-color: coral;
+
+  padding: 20px;
+
+  border-radius: 5px;
+
+}
+
+/* ====== SELECTORS ====== */
+
+.class-selector {
+
+  color: green;
+
+}
+
+#id-selector {
+
+  color: blue;
+
+  font-weight: bold;
+
+}
+
+p {
+
+  margin: 5px 0;
+
+}
+
+[data-type="custom"] {
+
+  color: purple;
+
+}
+
+/* ====== PSEUDO CLASSES ====== */
+
+a:hover {
+
+  color: red;
+
+  text-decoration: underline;
+
+}
+
+/* ====== PSEUDO ELEMENTS ====== */
+
+.pseudo-text::before {
+
+  content: ">> ";
+
+  color: orange;
+
+}
+
+.pseudo-text::after {
+
+  content: " <<";
+
+  color: orange;
+
+}
+
+/* ====== GRID ====== */
+
+.grid-container {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 10px;
+
+  background-color: lightyellow;
+
+  padding: 10px;
+
+}
+
+.grid-item {
+
+  background-color: teal;
+
+  color: white;
+
+  padding: 20px;
+
+  text-align: center;
+
+}
+
